@@ -72,7 +72,7 @@ html {
     .landing main {
         left: 30%;
         text-align: center;
-        width: 300px;
+        width: fit-content;
     }
 }
 .landing main p {
@@ -125,7 +125,6 @@ html {
     padding-bottom: 50px;
     background-color: #000;
     position: relative;
-    height: 80vb;
     display: grid;
     align-items: center;
 }
@@ -208,21 +207,26 @@ html {
     font-size: 25px;
     padding-right: 50px;
 }
-.contact .container .content .face {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 50%;
-}
 .contact .container .content .phones {
     text-align: center;
     display: flex;
     flex-direction: column;
     cursor: pointer;
 }
+.contact .container .content .face {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 50%;
+}
 .contact .container .face .fa-facebook{
     padding-right: 10px;
     font-size: 30px;
+}
+@media (max-width:767px) {
+    .contact .container .face {
+        margin-right: 25%;
+    }
 }
 .contact .container  .face a {
     padding-left: 20px;
