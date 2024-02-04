@@ -166,76 +166,50 @@ html {
 .contact {
     padding-top: 50px;
     padding-bottom: 50px;
-    position: relative;
     background-color: var(--section-Color);
+    position: relative;
+}
+.contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--main-Color);
+}
+.contact .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: var(--main-Color);
 }
 @media (max-width:767px) {
     .contact .container {
-        display: flex;
         flex-direction: column;
     }
 }
-.contact .container h2{
-    padding: 20px;
-    text-align: center;
+.phones .phone,
+.social .email{
+    margin-top: 20px;
+}
+.phones a,
+.social a {
+    text-decoration: none;
     color: var(--main-Color);
 }
-.contact .container .content{
-    display: grid;
-    grid-template-columns: repeat(2,minmax(300px,1fr));
-    gap: 50px;
-}
-@media (max-width:767px) {
-    .contact .container .content{
-        display: flex;
-        flex-direction: column;
-    }
-}
-.contact .container .content .face
-.contact .container .content .phones {
-    display: flex;
-    align-items: center;
-}
-.contact .container .content .whatsapp {
-    padding-bottom: 20px;
-    text-decoration: none;
+.phones a:hover,
+.social a:hover {
     color: #000;
 }
-.contact .container .content .phone .fa-phone,
-.contact .container .content .whatsapp .fa-whatsapp {
-    color: var(--main-Color);
-    font-size: 25px;
-    padding-right: 50px;
-}
-.contact .container .content .phones {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-}
-.contact .container .content .face {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 50%;
-}
-.contact .container .face .fa-facebook{
-    padding-right: 10px;
-    font-size: 30px;
+.phones .fa-whatsapp,
+.phones .fa-phone,
+.social  .fa-facebook,
+.social .fa-envelope{
+    padding-right: 20px;
+    font-size: 20px;
 }
 @media (max-width:767px) {
-    .contact .container .face {
-        margin-right: 25%;
+    .phones {
+        margin-bottom: 20px;
     }
-}
-.contact .container  .face a {
-    padding-left: 20px;
-    text-decoration: none;
-    color: #000;
-    transition: 1s;
-}
-.contact .container .face a {
-    color: var(--main-Color);
 }
 /* End Contact  */
 /* Start Footer  */
